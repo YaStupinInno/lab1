@@ -21,7 +21,6 @@ import static ru.innopolis.lab1.Debug.isDebugEnabled;
 public class MakerThread {
     private final static Logger logger = LoggerFactory.getLogger(MyThread.class); //логер
     private String[] list;
-    private MyThread temp;
     private List<MyThread> listThreads = new ArrayList<>();
 
     /**
@@ -42,7 +41,7 @@ public class MakerThread {
      */
 
     public void make(Set<String> globalSet) {
-
+        MyThread temp;
         for (String a : list) // перебираем все источники
         {
             if (a.startsWith("http://") || a.startsWith("ftp//")) {

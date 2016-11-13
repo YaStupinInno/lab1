@@ -29,9 +29,7 @@ public class WorkerWithText implements TextWorkable {
         }
         else
         return true;
-
     }
-
 
     /**
      * Метод принимает строку чистит ее от ненужных символов
